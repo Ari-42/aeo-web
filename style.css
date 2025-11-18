@@ -46,6 +46,9 @@ nav {
     nav ul.open {
         display: flex;
     }
+    .hamburger {
+        display: block;
+    }
 }
 .proyecto {
     margin-bottom: 40px;
