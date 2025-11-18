@@ -38,7 +38,7 @@ nav {
         padding: 20px;
         border-radius: 10px;
         position: absolute;
-        top: 80px;
+        top: 70px;
         right: 20px;
         width: 200px;
         text-align: right;
@@ -47,10 +47,7 @@ nav {
         display: flex;
     }
     .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 6px;
+        display: block;
     }
 }
 .proyecto {
@@ -65,6 +62,7 @@ header {
     background: #e6e6e6;
     border-radius: 8px;
     text-align: center;
+    position: relative;
     
 }
 h1 {
@@ -155,10 +153,10 @@ footer {
     width: 35px;
     height: 25px;
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 2000;
     display: none;
 }
 .hamburger .line {
