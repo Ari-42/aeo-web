@@ -156,7 +156,6 @@ footer {
     left: 25px;
     cursor: pointer;
     z-index: 1000;
-    display: none;
 }
 .hamburger .line {
     width: 100%;
