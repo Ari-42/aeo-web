@@ -48,6 +48,9 @@ nav {
     }
     .hamburger {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 6px;
     }
 }
 .proyecto {
@@ -156,6 +159,7 @@ footer {
     left: 25px;
     cursor: pointer;
     z-index: 1000;
+    display: none;
 }
 .hamburger .line {
     width: 100%;
