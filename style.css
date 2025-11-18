@@ -63,7 +63,7 @@ header {
     border-radius: 8px;
     text-align: center;
     position: relative;
-    z-index: 9999;
+    z-index: 1;
     
 }
 h1 {
@@ -157,7 +157,7 @@ footer {
     top: 20px;
     right: 20px;
     cursor: pointer;
-    z-index: 2000;
+    z-index: 9999;
     display: none;
 }
 .hamburger .line {
