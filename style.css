@@ -1,0 +1,192 @@
+body {
+    margin: 15px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    background-color: rgb(31, 29, 29);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px;
+    background: black;
+    transition: 0.2s ease-in-out;
+
+}
+nav ul li a:hover {
+    border-bottom: 2px solid rgb(92, 73, 73);
+    transform: scale(1.05);
+}
+nav {
+    margin-top: 15px;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: black;
+        padding: 20px;
+        border-radius: 10px;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        width: 200px;
+        text-align: right;
+    }
+    nav ul.open {
+        display: flex;
+    }
+}
+.proyecto {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #e6e6e6;
+    border-radius: 8px;
+}
+header {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+.h2w, .h3w {
+    margin-bottom: 10px;
+    padding: 20px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    display: inline-block;
+}
+.img-proyecto {
+    width: 100%;
+    max-width: 480px;
+    height:auto;
+    border-radius: 8px;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.galeria img {
+    width: 100%;
+    height: auto;
+}
+.contacto {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding: 20px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    background: #e6e6e6;
+    padding: 20px;
+    border-radius: 8px;
+}
+.formulario label {
+    font-weight: 700;
+}
+.formulario input, .formulario textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+}
+.formulario button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.formulario button:hover {
+    background: #333;
+}
+.formulario1 {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding: 20px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
+}
+.hamburger {
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+.hamburger .line {
+    width: 100%;
+    height: 4px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+.hamburger::before, .hamburger::after, .hamburger div {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.hamburger div {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hamburger::before {
+    top: 0;
+}
+.hamburger::after {
+    bottom: 0;
+}
+nav ul.open ~ .hamburger::after {
+    transform: translateY(11px) rotate(45deg);
+}
+nav ul.open ~ .hamburger::before {
+    transform: translateY(-11px) rotate(-45deg);
+}
+nav ul.open ~ .hamburger div {
+    opacity: 0;
+}
