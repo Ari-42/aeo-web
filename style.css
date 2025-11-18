@@ -47,7 +47,7 @@ nav {
         display: flex;
     }
     .hamburger {
-        display: block;
+        display: flex;
     }
 }
 .proyecto {
