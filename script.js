@@ -15,7 +15,7 @@ const galleries = {
         "Imagenes/bano2-1.jpg"
     ],
     2: [
-        "Imagenes/salon-Comedor2.jpg",
+        "Imagenes/salon-comedor2.jpg",
         "Imagenes/cocina2.jpg",
         "Imagenes/dormitorio1-2.jpg",
         "Imagenes/dormitorio2-2.jpg",
